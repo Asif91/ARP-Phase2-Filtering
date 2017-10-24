@@ -145,7 +145,7 @@ public class connection {
 	   public static int deleteSqlQuery (String sql)
 		{
 		    int delete = 0 ; 
-			connection.openConnection();
+		//	connection.openConnection();
 				try {
 				Statement stmt = conn.createStatement() ;
 				delete = stmt.executeUpdate(sql);

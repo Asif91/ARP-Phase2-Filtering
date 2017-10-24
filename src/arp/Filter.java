@@ -134,27 +134,25 @@ public static Scanner scan = new Scanner(System.in);
 			while(!loop);
 		}
 	
-		connection.closeConnection();
+	//	connection.closeConnection();
 	}
 	
 	public static void deleteAll()
 	{
-		connection.openConnection();
-
+	
 		String l = KeyBoard.getString("Are you sure ? y/n");
 		if(l.equalsIgnoreCase("y"))
 		{
 			deleteKeywordData();
 			System.out.println("Data Deleted");
-		//	menu();
+	
 		}
 		else
 		{
 			System.out.println("You saved your data by not entering 'y' ");
-		//	menu();
+	
 		}
 	
-		connection.closeConnection();
 
 	}
 	//fetch last paragraph id to start from table paragraphs
