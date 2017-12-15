@@ -14,35 +14,14 @@ import java.sql.Statement;
 public class connection {
 
 //  Database credentials localhost
-	/*
+	
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	   static final String DB_URL = "jdbc:mysql://localhost/personality";
 	   
 	
 	   static final String USER = "root";
 	   static final String PASS = "";
-	 */  	 
-	
-	
-
-	//  Database credentials live demo	   
-	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://cos80001.cxoswcz1r4nq.ap-southeast-2.rds.amazonaws.com:3306/PersonalityAnalyserDemo";
-	   
-	
-	   static final String USER = "root";
-	   static final String PASS = "password";
-	
-	/*
-	//  Database credentials real data	   
-	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://cos80001.cxoswcz1r4nq.ap-southeast-2.rds.amazonaws.com:3306/PersonalityAnalyser";
-	   
-	//  Database credentials
-	   static final String USER = "root";
-	   static final String PASS = "password";
 	 
-	  */ 
 	   static Connection conn = null;
 	   
 	   public static void closeConnection()
